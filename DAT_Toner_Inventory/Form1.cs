@@ -12,8 +12,9 @@ namespace DAT_Toner_Inventory
             InitializeComponent();
         }
 
-        DataTable dt = new DataTable();
-        MySqlConnection conn = new MySqlConnection("Data Source=10.0.0.17;Port=3306;Initial Catalog=phone_messages;User ID=phone_messages;Password=Ei1CW10ncoCHsaUp");
+        DataTable OBSdt = new DataTable();
+        DataTable NonOBSdt = new DataTable();
+        MySqlConnection conn = new MySqlConnection("Data Source=10.0.0.17;Port=3306;Initial Catalog=phone_messages;User ID=DAT_Toner;Password=Ei1CW10ncoCHsaUp");
 
         private void checkInButton_Click(object sender, EventArgs e)
         {
@@ -46,6 +47,16 @@ namespace DAT_Toner_Inventory
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void OBSDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
